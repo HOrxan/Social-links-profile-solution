@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+
+        /* ## Colors */
+        --Green: hsl(75, 94%, 57%);
+        --White: hsl(0, 0%, 100%);
+        --Grey-700: hsl(0, 0%, 20%);
+        --Grey-800: hsl(0, 0%, 12%);
+        --Grey-900: hsl(0, 0%, 8%);
+
+        /* Font Size */
+        --fs-24:24px;
+        --fs-14: 14px;
+
+        /* Font Weight*/
+        --Weight-400: 400;
+        --Weight-600: 600;
+        --Weight-700: 700;
+
+        /* Border Radius */
+        --br:10px;
+        --br50:50%;
+      }
+
+      body {
+        background: var(--Grey-900);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        font-family: Inter;
+        line-height: 1.5;
+      }
+
+      .user-card {
+        background: var(--Grey-800);
+        color: var(--White);
+        width: 100%;
+        height: 100%;
+        max-width: 380px;
+        max-height: 610px;
+        border-radius: var(--br);
+        padding: 40px;
+      }
+
+      .user-image {
+        border-radius: var(--br50);
+        width: 90px;
+        height: 90px;
+      }
+
+      .user-name {
+        font-size: var(--fs-24);
+        font-weight: var(--Weight-400);
+        margin-top: 20px;
+      }
+
+      .user-location {
+        font-size: var(--fs-14);
+        font-family: var(--Family);
+        font-weight: var(--Weight-600);
+        color: var(--Green);
+        margin-block: 4px;
+      }
+
+      .user-info {
+        font-size: var(--fs-14);
+        font-family: var(--Family);
+        font-weight: var(--Weight-400);
+        margin-block: 24px;
+
+      }
+
+      p {
+        font-size: var(--fs-14);
+        font-family: var(--Family);
+        font-weight: var(--Weight-600);
+        background: var(--Grey-700);
+        border-radius: var(--br);
+        padding-block: 12px;
+        margin-block: 16px;
+      }
+
+      p:hover {
+        background: var(--Green);
+        color: var(--Grey-900);
+        cursor: pointer;
+      }
+
+      @media (max-width:480px) {
+        body {
+          min-height: 375px;
+        }
+
+        .user-card {
+          max-width: 320px;
+          padding: 20px;
+          max-height: 580px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="user-card">
+      <img class="user-image" src="assets/images/avatar-jessica.jpeg" alt="">
+      <h1 class="user-name">Jessica Randall</h1>
+      <h6 class="user-location">London, United Kingdom</h6>
+      <h6 class="user-info">"Front-end developer and avid reader."</h6>
+      <p>GitHub</p>
+      <p>Frontend Mentor</p>
+      <p>LinkedIn</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+    </main>
+  </body>
+
+</html>
